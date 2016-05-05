@@ -1,0 +1,230 @@
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700,800);
+@import url(https://fonts.googleapis.com/css?family=Cinzel+Decorative:400,700,900);
+body,
+html {
+  width: 100%;
+  height: 100%;
+  font-family: 'Open Sans', sans-serif;
+}
+.navbar {
+  font-weight: 100;
+  font-size: 14px;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  border: none;
+  background-color: rgba(252, 250, 230, 0.9);
+}
+.navbar .container .navbar-header .navbar-brand {
+  padding-top: 0px;
+}
+.navbar .container .navbar-header .navbar-brand .logo {
+  height: 30px;
+  width: 80px;
+}
+.navbar .container .navbar-header .slogan {
+  font-size: 14px;
+  line-height: 50px;
+  color: black;
+  font-weight: 400;
+}
+.navbar .navbar-toggle {
+  border: none;
+}
+.navbar .navbar-toggle .icon-bar {
+  background-color: #444444;
+}
+.navbar .navbar-collapse {
+  border: none;
+}
+.navbar .navbar-collapse .menu {
+  text-align: center;
+}
+.navbar .navbar-collapse .menu li a {
+  color: #444444;
+  font-weight: 300;
+}
+.navbar .navbar-collapse .menu li a:hover {
+  color: black;
+}
+.navbar-clock {
+  top: 80px;
+  background-color: #FF0101;
+  height: 30px;
+  min-height: 30px;
+  padding: 0;
+  line-height: 30px;
+  color: #fffded;
+  text-align: center;
+  font-size: 16px;
+}
+.navbar-clock strong {
+  font-weight: 300;
+}
+.navbar-clock .clock-btn {
+  color: #fffded;
+  font-weight: 600;
+  text-decoration: underline;
+}
+.intro-header {
+  padding-top: 50px;
+  /* If you're making other pages, make sure there is 50px of padding to make sure the navbar doesn't overlap content! */
+  padding-bottom: 50px;
+  height: 100vh;
+  text-align: center;
+  color: #f8f8f8;
+  background: url(/asset/images/bg2.jpg) no-repeat fixed center;
+  background-size: 750px 600px;
+}
+.content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  font-size: 35px;
+  line-height: 40px;
+  height: 160px;
+  width: 500px;
+  overflow: hidden;
+}
+.content .visible {
+  font-weight: 600;
+  overflow: hidden;
+  height: 40px;
+  text-transform: uppercase;
+}
+.content .visible ul {
+  width: 100%;
+  margin-top: 0;
+  text-align: center;
+  list-style: none;
+  background-color: rgba(255, 255, 255, 0.2);
+  -webkit-animation: 10s linear 0s normal none infinite change;
+  animation: 10s linear 0s normal none infinite change;
+}
+.content .visible ul li {
+  line-height: 44px;
+  margin: 0;
+  color: #fffded;
+}
+.content .visible ul li strong {
+  color: #FF0101;
+}
+@-webkit-keyframes change {
+  0%,
+  12%,
+  100% {
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+  }
+  17%,
+  29% {
+    -webkit-transform: translateY(-25%);
+    transform: translateY(-25%);
+  }
+  34%,
+  46% {
+    -webkit-transform: translateY(-50%);
+    transform: translateY(-50%);
+  }
+  51%,
+  63% {
+    -webkit-transform: translateY(-75%);
+    transform: translateY(-75%);
+  }
+  68%,
+  80% {
+    -webkit-transform: translateY(-50%);
+    transform: translateY(-50%);
+  }
+  85%,
+  97% {
+    -webkit-transform: translateY(-25%);
+    transform: translateY(-25%);
+  }
+}
+@keyframes change {
+  0%,
+  12%,
+  100% {
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+  }
+  17%,
+  29% {
+    -webkit-transform: translateY(-25%);
+    transform: translateY(-25%);
+  }
+  34%,
+  46% {
+    -webkit-transform: translateY(-50%);
+    transform: translateY(-50%);
+  }
+  51%,
+  63% {
+    -webkit-transform: translateY(-75%);
+    transform: translateY(-75%);
+  }
+  68%,
+  80% {
+    -webkit-transform: translateY(-50%);
+    transform: translateY(-50%);
+  }
+  85%,
+  97% {
+    -webkit-transform: translateY(-25%);
+    transform: translateY(-25%);
+  }
+}
+@media (max-width: 500px) {
+  .menu {
+    padding-top: 30px;
+  }
+  .content {
+    font-size: 24px;
+    width: 100%;
+  }
+  .navbar-clock {
+    font-size: 10px;
+  }
+}
+.network-name {
+  text-transform: uppercase;
+  font-size: 14px;
+  font-weight: 400;
+  letter-spacing: 2px;
+}
+.content-section-a {
+  padding: 50px 0;
+  background-color: #fffded;
+}
+.content-section-b {
+  padding: 50px 0;
+}
+.section-heading {
+  margin-bottom: 30px;
+}
+.banner {
+  padding: 100px 0;
+  color: #f8f8f8;
+  background: url(/asset/images/bg.jpg) no-repeat center center;
+  background-size: cover;
+  text-align: center;
+}
+.banner a {
+  color: #444444;
+  padding: 0 20px 0 20px;
+  font-size: 36px;
+  font-weight: 800;
+  background-color: rgba(255, 255, 255, 0.4);
+}
+footer {
+  text-align: center;
+  padding: 50px 0;
+}
+footer a {
+  color: #444444;
+}
+p.copyright {
+  margin: 15px 0 0;
+}
